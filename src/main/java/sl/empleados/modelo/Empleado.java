@@ -9,11 +9,9 @@ import lombok.*;
 
 @Entity
 @Data
-@ToString
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,4 +20,13 @@ public class Empleado {
     String departamento;
     Double sueldo;
 
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "idEmpleado=" + idEmpleado +
+                ", nombre='" + nombre + '\'' +
+                ", departamento='" + departamento + '\'' +
+                ", sueldo=" + sueldo +
+                '}';
+    }
 }
