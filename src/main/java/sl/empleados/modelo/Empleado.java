@@ -10,8 +10,6 @@ import java.util.Objects;
 
 
 @Entity
-@Data
-@EqualsAndHashCode
 public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -84,5 +82,4 @@ public class Empleado {
                 ", sueldo=" + sueldo +
                 '}';
     }
-
 }
