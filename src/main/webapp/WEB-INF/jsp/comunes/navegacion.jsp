@@ -4,8 +4,10 @@
 </c:set>
 
 <c:set var="urlAgregar">
-  <c:url value="${application.contextPath}/agregar"
+  <c:url value="${application.contextPath}/agregar"/>
 </c:set>
+
+
 
 <div class="container">
         <nav class="navbar navbar-expand-lg" style="background-color: #5D0090;" data-bs-theme="dark">
