@@ -15,7 +15,7 @@
                       Opciones
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Nuevo empleado</a></li>
+                      <li><a class="dropdown-item" href="/empleados/agregar">Nuevo empleado</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                     </ul>
                   </li>

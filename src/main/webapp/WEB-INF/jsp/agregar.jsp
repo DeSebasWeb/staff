@@ -6,20 +6,23 @@
         <h3>Agregar empleado</h3>
     </div>
 <!-- Formulario para agregar cliente -->
-    <form>
+    <form action="/empleados/agregar" modelAttribute="empleadoForma" method="post">
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required="true">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required="true">
         </div>
         <div class="mb-3">
-          <label for="departamento" class="form-label">Departamento</label>
-          <input type="text" class="form-control" id="departamento">
+            <label for="departamento" class="form-label">Departamento</label>
+            <input type="text" class="form-control" id="departamento" name="departamento">
         </div>
         <div class="mb-3">
-          <input for="" class="form-label">
-          <label for="sueldo" class="form-control">Sueldo</label>
+            <label for="sueldo" class="form-label">Sueldo</label>
+            <input type="number" step="any" class="form-control" name="sueldo" id="sueldo">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success btn-sm me-3" >Agregar</button>
+            <a href="/empleados" class="btn btn-info btn-sm">Regresar</a>
+        </div>   
       </form>
 
 </div>
