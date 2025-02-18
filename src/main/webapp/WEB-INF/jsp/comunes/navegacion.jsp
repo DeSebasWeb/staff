@@ -11,6 +11,9 @@
   <c:url value="${application.contextPath}/editar"/>
 </c:set>
 
+<c:set var="urlEliminar">
+  <c:url value="${application.contextPath}/eliminar"/>
+</c:set>
 <div class="container">
         <nav class="navbar navbar-expand-lg" style="background-color: #5D0090;" data-bs-theme="dark">
             <div class="container-fluid">
@@ -34,8 +37,8 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="Buscar">
-                  <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                  <button class="btn btn-outline-success" type="submit"></button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
               </div>
             </div>

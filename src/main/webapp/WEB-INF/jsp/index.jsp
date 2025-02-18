@@ -16,6 +16,7 @@
             <th scope="col">Departamento</th>
             <th scope="col">Sueldo</th>
             <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
           </tr>
         </thead>
         <tbody>
@@ -36,6 +37,14 @@
                   </c:url>
                 </c:set>
                 <a href="${urlEditar}" class="btn btn-primary me-3">Editar</a>
+              </td>
+              <td class="text-center">
+                <c:set var="urlEliminar">
+                  <c:url value="${application.contextPath}/eliminar">
+                    <c:param name="idEmpleado" value="${empleado.idEmpleado}"/>
+                  </c:url>
+                </c:set>
+                <a href="${urlEliminar}" class="btn btn-danger">Eliminar</a>
               </td>
             </tr>
           </c:forEach>

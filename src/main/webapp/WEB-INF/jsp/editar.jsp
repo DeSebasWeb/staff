@@ -22,8 +22,8 @@
             <input type="number" step="any" class="form-control" name="sueldo" id="sueldo" value="${empleado.sueldo}">
         </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-success btn-sm me-3" >Editar</button>
-            <a href="${urlInicio}" class="btn btn-info btn-sm">Regresar</a>
+            <button type="submit" class="btn btn-success me-3" >Editar</button>
+            <a href="${urlInicio}" class="btn btn-danger">Regresar</a>
         </div>   
       </form>
 </div>
