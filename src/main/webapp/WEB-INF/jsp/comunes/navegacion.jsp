@@ -7,7 +7,9 @@
   <c:url value="${application.contextPath}/agregar"/>
 </c:set>
 
-
+<c:set var="urlEditar">
+  <c:url value="${application.contextPath}/editar"/>
+</c:set>
 
 <div class="container">
         <nav class="navbar navbar-expand-lg" style="background-color: #5D0090;" data-bs-theme="dark">
@@ -19,7 +21,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="urlInicio">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="${urlInicio}">Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,9 +33,9 @@
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex" role="Buscar">
+                  <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit"></button>
                 </form>
               </div>
             </div>
