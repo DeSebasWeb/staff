@@ -60,15 +60,10 @@ public class IndexControlador {
     }
 
     @RequestMapping(value = "/eliminar", method = RequestMethod.GET)
-    public String mostrarEliminar(@RequestParam int idEmpleado, ModelMap modelo){
+    public String eliminarEmpleado(@RequestParam int idEmpleado){
         Empleado empleado = empleadoServicio.buscarEmpleadoPorID(idEmpleado);
-        modelo.put("empleado", empleado);
-        return "eliminar";//mostrar la pagina de eliminar
-    }
-
-    @RequestMapping(value = "/eliminar", method = RequestMethod.POST)
-    public String eliminarEmpleado(@ModelAttribute("empleadoForma") Empleado empleado, HttpServletRequest request){
         logger.info("Empleado a eliminar: "+ empleado);
+        empleado.setIdEmpleado(idEmpleado);
         empleadoServicio.eliminarEmpleado(empleado);
         return "redirect:/";
     }
